@@ -113,11 +113,11 @@
   color: #ffa800;
 }
 
-.catalog-of-shops__menu-item--active > a {
+/* .catalog-of-shops__menu-item--active > a {
   font-weight: 700;
   border-bottom: 1px dotted #ffa800;
   color: #ffa800;
-}
+} */
 
 .catalog-of-shops__menu-item span {
   padding-left: 3px;
@@ -135,15 +135,15 @@
   box-shadow: none;
 }
 
-.catalog-of-shops__menu .catalog-of-shops__submenu--open li {
+.catalog-of-shops__submenu--open .catalog-of-shops__submenu-item {
   padding-left: 47px;
 }
 
-.catalog-of-shops__menu .catalog-of-shops__submenu--open li:hover {
+.catalog-of-shops__submenu--open .catalog-of-shops__submenu-item:hover {
   background-color: #efece7;
 }
 
-.catalog-of-shops__menu .catalog-of-shops__submenu--open li:hover a {
+.catalog-of-shops__submenu--open .catalog-of-shops__submenu-item:hover a {
   border-bottom: none;
   color: #ffa800;
 }
