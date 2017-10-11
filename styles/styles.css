@@ -1,0 +1,36 @@
+.catalog-of-shops {
+  padding-top: 100px;
+}
+
+.catalog-of-shops h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.catalog-of-shops h1 + p {
+  width: 420px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.catalog-of-shops__content-item {
+  width: 320px;
+  height: 270px;
+  background-image: url("../images/catalog-of-shops__item-bg.png");
+  background-position: 0 top;
+  background-color: #e0dbd3;
+  border-radius: 3px;
+}
+
+.catalog-of-shops__content-item a {
+  display: block;
+}
+
+.catalog-of-shops__content-item img {
+  width: auto;
+  max-width: 320px;
+  max-height: 362px;
+}
