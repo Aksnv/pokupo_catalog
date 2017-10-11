@@ -23,11 +23,12 @@
 
 .catalog-of-shops__menu {
   float: left;
+  position: relative;
   margin-bottom: 28px;
   margin-right: 30px;
 }
 
-.catalog-of-shops__menu h2 {
+.catalog-of-shops__menu-button {
   position: relative;
   font-size: 16px;
   font-weight: 600;
@@ -35,9 +36,11 @@
   text-transform: uppercase;
   padding-left: 29px;
   color: #000;
+  cursor: pointer;
+  z-index: 11;
 }
 
-.catalog-of-shops__menu h2::before {
+.catalog-of-shops__menu-button::before {
   position: absolute;
   top: 4px;
   left: 1px;
@@ -49,8 +52,95 @@
   background-position: -856px -847px;
 }
 
+.catalog-of-shops__menu-button--open::before {
+  top: 2px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  background-position: -877px -846px;
+}
+
 .catalog-of-shops__menu ul {
   display: none;
+  position: absolute;
+  top: -24px;
+  left: -33px;
+  width: 294px;
+  text-align: left;
+  padding-top: 59px;
+  padding-left: 33px;
+  padding-bottom: 13px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.catalog-of-shops__menu-button--open + ul {
+  display: block;
+}
+
+.catalog-of-shops__menu-item {
+  position: relative;
+}
+
+.catalog-of-shops__menu-item::before {
+  position: absolute;
+  top: 12px;
+  left: -18px;
+  content: "";
+  display: block;
+  width: 11px;
+  height: 8px;
+  background-image: url("../images/main_sprite.png");
+  background-position: -80px -899px;
+}
+
+.catalog-of-shops__menu-item a {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  border-bottom: 1px dotted #177a93;
+  color: #177a93;
+}
+
+.catalog-of-shops__menu-item a:hover {
+  border-bottom: 1px dotted #ffa800;
+  color: #ffa800;
+}
+
+.catalog-of-shops__menu-item span {
+  padding-left: 3px;
+  color: #999;
+}
+
+.catalog-of-shops__menu .catalog-of-shops__submenu--open {
+  display: block;
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: -24px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  box-shadow: none;
+}
+
+.catalog-of-shops__menu .catalog-of-shops__submenu--open li {
+  padding-left: 47px;
+}
+
+.catalog-of-shops__menu .catalog-of-shops__submenu--open li:hover {
+  background-color: #efece7;
+}
+
+.catalog-of-shops__submenu-item--active {
+  background-color: #efece7;
+}
+
+.catalog-of-shops__submenu-item--active a {
+  font-weight: 700;
+  border-bottom: none;
+  color: #ffa800;
 }
 
 /* Catalog-of-shops - breadcrumbs */
@@ -152,6 +242,10 @@
 
 .catalog-of-shops__pagination {
   float: right;
+}
+
+.catalog-of-shops__pagination--bottom {
+  margin-bottom: 50px;
 }
 
 .catalog-of-shops__pagination li {

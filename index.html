@@ -52,6 +52,7 @@
 
                 <link rel="stylesheet" type="text/css" media="screen" href="https://pokupo.ru/themes/default/default/front.min.css">
                 <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
     <!-- <link rel="preload" as="image" href="/themes/default/default/images/logo/logo.png">    
     <link rel="preload" as="image" href="/themes/default/default/images/sprite.png">
     <link rel="preload" as="image" href="/themes/default/default/images/main_sprite.png">
@@ -213,11 +214,29 @@
           <p>Мы собрали для вас обширный каталог магазинов, работающих на базе торговой платформы Pokupo</p>
 
           <div class="catalog-of-shops__menu">
-            <h2>Меню каталога</h2>
+            <h2 class="catalog-of-shops__menu-button">Меню каталога</h2>
             <ul>
-              <li><a href="#">Автомобили, мотоциклы</a></li>
-              <li><a href="#">Интернет</a></li>
-              <li><a href="#">Образование, наука</a></li>
+              <li class="catalog-of-shops__menu-item"><a href="#">Автомобили, мотоциклы</a><span>24</span></li>
+              <li class="catalog-of-shops__menu-item"><a href="#">Интернет</a><span>34</span></li>
+              <li class="catalog-of-shops__menu-item"><a href="#">Образование, наука</a><span>24</span></li>
+              <li class="catalog-of-shops__menu-item"><a href="#">Фото и оптика</a><span>65</span></li>
+              <li class="catalog-of-shops__menu-item"><a href="#">Одежда, обувь и аксессуары</a><span>126</span>
+                <ul class="catalog-of-shops__submenu">
+                  <li class="catalog-of-shops__submenu-item"><a href="#">Кроссовки</a><span>19</span></li>
+                  <li class="catalog-of-shops__submenu-item catalog-of-shops__submenu-item--active"><a href="#">Кеды</a><span>134</span></li>
+                  <li class="catalog-of-shops__submenu-item"><a href="#">Босоножки</a><span>245</span></li>
+                  <li class="catalog-of-shops__submenu-item"><a href="#">Туфли</a><span>195</span></li>
+                  <li class="catalog-of-shops__submenu-item"><a href="#">Ботильоны</a><span>132</span></li>
+                  <li class="catalog-of-shops__submenu-item"><a href="#">Сандалии</a><span>73</span></li>
+                  <li class="catalog-of-shops__submenu-item"><a href="#">Балетки</a><span>36</span></li>
+                  <li class="catalog-of-shops__submenu-item"><a href="#">Сапоги</a><span>56</span></li>
+                  <li class="catalog-of-shops__submenu-item"><a href="#">Резиновая обувь</a><span>5</span></li>
+                </ul>
+              </li>
+              <li class="catalog-of-shops__menu-item"><a href="#">Праздники и подарки</a><span>15</span></li>
+              <li class="catalog-of-shops__menu-item"><a href="#">Книги, учебники и журналы</a><span>89</span></li>
+              <li class="catalog-of-shops__menu-item"><a href="#">Мебель, интерьер и обиход</a><span>49</span></li>
+              <li class="catalog-of-shops__menu-item"><a href="#">Другое</a><span>158</span></li>
             </ul>
           </div>
           <div class="catalog-of-shops__breadcrumbs">
@@ -441,7 +460,7 @@
               </li>
             </ul>
           </div>
-          <div class="catalog-of-shops__pagination">
+          <div class="catalog-of-shops__pagination catalog-of-shops__pagination--bottom">
             <ul>
               <li><a class="catalog-of-shops__pagination-button catalog-of-shops__pagination-button--active" href="#">1</a></li>
               <li><a class="catalog-of-shops__pagination-button" href="#">2</a></li>
@@ -506,6 +525,8 @@
 
         </div>
     </footer>
-
+  
+  <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
