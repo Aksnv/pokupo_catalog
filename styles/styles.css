@@ -16,13 +16,85 @@
 .catalog-of-shops h1 + p {
   width: 420px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+}
+
+/* Catalog-of-shops - menu */
+
+.catalog-of-shops__menu {
+  float: left;
+  margin-bottom: 28px;
+  margin-right: 30px;
+}
+
+.catalog-of-shops__menu h2 {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 29px;
+  color: #000;
+}
+
+.catalog-of-shops__menu h2::before {
+  position: absolute;
+  top: 4px;
+  left: 1px;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 10px;
+  background-image: url("../images/main_sprite.png");
+  background-position: -856px -847px;
+}
+
+.catalog-of-shops__menu ul {
+  display: none;
+}
+
+/* Catalog-of-shops - breadcrumbs */
+
+.catalog-of-shops__breadcrumbs {
+  float: left;
+}
+
+.catalog-of-shops__breadcrumbs li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-right: 10px;
+  color: #666;
+}
+
+.catalog-of-shops__breadcrumbs li > a {
+  text-decoration: none;
+  border-bottom: 1px dotted #177a93;
+  color: #177a93;
+}
+
+.catalog-of-shops__breadcrumbs li::after {
+  position: absolute;
+  top: 0;
+  right: -9px;
+  content: "/";
+  display: block;
+  font-size: 15px;
+  color: #666;
+}
+
+.catalog-of-shops__breadcrumbs li:last-child::after {
+  display: none;
 }
 
 /* Catalog-of-shops - search */
 
 .catalog-of-shops__search {
   float: left;
+  clear: both;
   position: relative;
   width: 400px;
 }
@@ -79,7 +151,7 @@
 /* Catalog-of-shops - pagination */
 
 .catalog-of-shops__pagination {
-  text-align: right;
+  float: right;
 }
 
 .catalog-of-shops__pagination li {
