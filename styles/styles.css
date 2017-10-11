@@ -38,6 +38,64 @@
   max-height: 362px;
 }
 
+/* Catalog-of-shops - search */
+
+.catalog-of-shops__search {
+  position: relative;
+  width: 400px;
+}
+
+.catalog-of-shops__search-field {
+  width: 400px;
+  height: 46px;
+  padding-left: 25px;
+  padding-right: 45px;
+  background-color: white;
+  border: 1px solid #e0dbd3;
+  border-radius: 23px;
+}
+
+.catalog-of-shops__search-field:focus {
+  border: 1px solid #ffa800;
+}
+
+.catalog-of-shops__search-field::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #e0dbd3;
+}
+
+.catalog-of-shops__search-field:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #e0dbd3;
+}
+
+.catalog-of-shops__search-field::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #e0dbd3;
+}
+
+.catalog-of-shops__search-submit {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-image: url("../images/main_sprite.png");
+  background-position: -2px -888px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+
+
 /* Catalog-of-shops - pagination */
 
 .catalog-of-shops__pagination {
