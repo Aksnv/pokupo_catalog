@@ -95,6 +95,10 @@
   background-position: -80px -899px;
 }
 
+.catalog-of-shops__menu-item--active::before {
+  background-position: -81px -888px;
+}
+
 .catalog-of-shops__menu-item a {
   font-size: 13px;
   font-weight: 400;
@@ -105,6 +109,12 @@
 }
 
 .catalog-of-shops__menu-item a:hover {
+  border-bottom: 1px dotted #ffa800;
+  color: #ffa800;
+}
+
+.catalog-of-shops__menu-item--active > a {
+  font-weight: 700;
   border-bottom: 1px dotted #ffa800;
   color: #ffa800;
 }
@@ -133,12 +143,7 @@
   background-color: #efece7;
 }
 
-.catalog-of-shops__submenu-item--active {
-  background-color: #efece7;
-}
-
-.catalog-of-shops__submenu-item--active a {
-  font-weight: 700;
+.catalog-of-shops__menu .catalog-of-shops__submenu--open li:hover a {
   border-bottom: none;
   color: #ffa800;
 }
