@@ -410,4 +410,30 @@
   display: block;
 }
 
+/* Catalog-of-shops 750px styles */
 
+@media screen and (max-width: 1023px) {
+
+  section.catalog-of-shops {
+    display: block;
+  }
+
+  .container--catalog-of-shops {
+    width: 670px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .catalog-of-shops__pagination li {
+    margin-right: 23px;
+  }
+
+  .catalog-of-shops__content-item:nth-child(n) {
+    margin-right: 5px;
+  }
+
+  .catalog-of-shops__content-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+}
