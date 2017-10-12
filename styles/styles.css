@@ -310,6 +310,13 @@
   margin-right: 0;
 }
 
+.catalog-of-shops__content-item > div {
+  display: table-cell; 
+  vertical-align: middle;
+  width: 320px; 
+  height: 256px;
+}
+
 .catalog-of-shops__content-item h3 {
   font-size: 18px;
   font-weight: 800;
