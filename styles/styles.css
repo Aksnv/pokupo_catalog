@@ -623,8 +623,36 @@
 
 /* Our clients 360px styles */
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 749px) {
 
+  .container--our-clients {
+    width: 360px;
+  }
 
+  .our-clients {
+    padding-top: 35px;
+  }
+
+  .our-clients h2 {
+    font-size: 30px;
+  }
+
+  .our-clients p {
+    width: 325px;
+  }
+
+  .our-clients .catalog-of-shops__content-item {
+    margin-bottom: 12px;
+  }
+
+  .our-clients__carousel-item--1 .catalog-of-shops__content-item:nth-child(2) {
+    display: none;
+  }
+
+  .our-clients__carousel-button {
+    top: 85%;
+  }
+
+  
   
 }

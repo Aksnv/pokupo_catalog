@@ -9,3 +9,8 @@ $(".catalog-of-shops__menu-item > a").click(function(e) {
   $(this).siblings(".catalog-of-shops__submenu").toggleClass("catalog-of-shops__submenu--open");
   $(this).parent().toggleClass("catalog-of-shops__menu-item--active");
 });
+
+
+/* Our clients carousel */
+
+
