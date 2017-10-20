@@ -602,7 +602,8 @@
 @media screen and (max-width: 1060px) {
 
   .container--our-clients {
-    width: 768px;
+    width: 745px;
+    padding: 0;
   }
 
   .our-clients__carousel-item--1 .catalog-of-shops__content-item:nth-child(3) {
@@ -610,11 +611,20 @@
   }
 
   .our-clients__carousel-button--back {
-    left: 29px;
+    left: 20px;
   }
   
   .our-clients__carousel-button--forward {
-    right: 33px;
+    right: 20px;
   }
+
+}
+
+
+/* Our clients 360px styles */
+
+@media screen and (max-width: 1060px) {
+
+
   
 }
