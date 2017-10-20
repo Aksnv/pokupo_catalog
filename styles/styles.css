@@ -556,7 +556,8 @@
   position: relative;
 }
 
-.our-clients__carousel-item--2 {
+.our-clients__carousel-item--2,
+.our-clients__carousel-item--3 {
   display: none;
 }
 
@@ -593,4 +594,27 @@
   padding: 0;
   color: white;
   border: 2px solid #ffa800;
+}
+
+
+/* Our clients 768px styles */
+
+@media screen and (max-width: 1060px) {
+
+  .container--our-clients {
+    width: 768px;
+  }
+
+  .our-clients__carousel-item--1 .catalog-of-shops__content-item:nth-child(3) {
+    display: none;
+  }
+
+  .our-clients__carousel-button--back {
+    left: 29px;
+  }
+  
+  .our-clients__carousel-button--forward {
+    right: 33px;
+  }
+  
 }
