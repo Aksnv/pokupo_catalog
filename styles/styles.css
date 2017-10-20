@@ -518,3 +518,16 @@
   }
 
 }
+
+
+/* Our clients all styles */
+
+.our-clients {
+  height: 484px;
+  margin-bottom: 120px;
+  background-image: url("../images/our-clients__bg.jpg");
+}
+
+.our-clients__carousel-item--2 {
+  display: none;
+}
