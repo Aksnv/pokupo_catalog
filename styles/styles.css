@@ -523,11 +523,74 @@
 /* Our clients all styles */
 
 .our-clients {
-  height: 484px;
+  height: 601px;
   margin-bottom: 120px;
+  padding-top: 40px;
   background-image: url("../images/our-clients__bg.jpg");
+  background-position: 50% top;
+  background-repeat: no-repeat;
+}
+
+.our-clients h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.our-clients p {
+  width: 415px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  color: white;
+}
+
+.our-clients .catalog-of-shops__content-item h3 {
+  text-align: center;
+  color: #fff;
+}
+
+.our-clients .catalog-of-shops__content-item {
+  margin-bottom: 8px;
+}
+
+.our-clients__carousel {
+  position: relative;
 }
 
 .our-clients__carousel-item--2 {
   display: none;
+}
+
+.our-clients__carousel-button {
+  position: absolute;
+  top: 38%;
+  display: block;
+  width: 11px;
+  height: 19px;
+  background-image: url("../images/main_sprite.png");
+  border: none;
+  outline: none;
+}
+
+.our-clients__carousel-button--back {
+  left: -30px;
+  background-position: -99px -889px;
+}
+
+.our-clients__carousel-button--forward {
+  right: -30px;
+  background-position: -118px -889px;
+}
+
+.our-clients a.btn-sm {
+  width: 320px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 46px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  color: white;
+  border: 2px solid #ffa800;
 }
