@@ -613,10 +613,6 @@
     padding: 0;
   }
 
-  .catalog-of-shops__carousel-item--3 {
-    display: none;
-  }
-
   .our-clients__carousel-button--back {
     left: 20px;
   }
@@ -650,10 +646,6 @@
 
   .our-clients .catalog-of-shops__content-item {
     margin-bottom: 12px;
-  }
-
-  .catalog-of-shops__carousel-item--2 {
-    display: none;
   }
 
   .our-clients__carousel-button {
