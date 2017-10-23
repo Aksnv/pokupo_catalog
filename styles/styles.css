@@ -556,9 +556,12 @@
   position: relative;
 }
 
-.our-clients__carousel-item--2,
-.our-clients__carousel-item--3 {
+.catalog-of-shops__carousel-item {
   display: none;
+}
+
+.catalog-of-shops__carousel-item--visible {
+  display: inline-block;
 }
 
 .our-clients__carousel-button {
@@ -570,6 +573,10 @@
   background-image: url("../images/main_sprite.png");
   border: none;
   outline: none;
+}
+
+.our-clients__carousel-button[disabled] {
+  opacity: 0.5;
 }
 
 .our-clients__carousel-button--back {
@@ -606,7 +613,7 @@
     padding: 0;
   }
 
-  .our-clients__carousel-item--1 .catalog-of-shops__content-item:nth-child(3) {
+  .catalog-of-shops__carousel-item--3 {
     display: none;
   }
 
@@ -645,7 +652,7 @@
     margin-bottom: 12px;
   }
 
-  .our-clients__carousel-item--1 .catalog-of-shops__content-item:nth-child(2) {
+  .catalog-of-shops__carousel-item--2 {
     display: none;
   }
 
